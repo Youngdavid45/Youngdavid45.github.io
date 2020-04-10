@@ -1,0 +1,135 @@
+body {
+    text-align: center;
+    background-color: #ADD8E6;
+    color: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    margin: auto;
+    width: 35%;
+}
+
+.content {
+    background-color: white;
+    color: #4a5568;
+    width: auto;
+    padding: 20px;
+    background-position: relative;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    justify-content: center;
+    font-size: 15px;
+}
+
+#header {
+    color: rgb(6, 6, 105);
+    text-align: center;
+    font-size: 10px;
+}
+
+.content h1 {
+    font-family: U8, sans-serif;
+    color: rgb(14, 14, 153);
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+#header p {
+    color: rgb(48, 46, 46);
+    margin-top: 10px;
+    padding-top: 1opx;
+    font-size: 14px;
+    line-height: 2px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+#logo {
+    width: auto;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: 60px;
+}
+
+.logindetails {
+    padding-left: 20px;
+    padding-right: 20px;
+    align-content: center;
+    font-weight: 400;
+    text-align: start;
+    position: relative;
+}
+ .logindetails label {
+     display: block;
+     padding-top: 30px;
+     margin: 0.3rem -0.16rem;
+     text-align: start;
+     font-weight: 530;
+ }
+
+ .logindetails input[type = "text"]{
+     width: 100%;
+     padding: 8px;
+     height: 30px;
+     border-radius: 5px;
+     background-color: rgb(233, 225, 225);
+     text-decoration: none;
+     color: #edf2f7;
+     font-weight: 500;
+     display: block;
+ }
+
+ .logindetails input::placeholder{
+    color: grey;
+ }
+    
+ select {
+     background-color: rgb(201, 193, 193);
+     width: 100%;
+     height: 50px;
+     margin: 0px, 20px, 10px, 20px;
+     border-radius: 5px;
+     color: gray;
+     align-self: center;
+ }
+
+ option {
+     background-color: white;
+     color: black;
+     height: 40;
+     font-weight: 500;
+ }
+
+button{
+     width: 100%;
+     height: 60px;
+     margin-top: 30px;
+     margin-bottom: 40px;
+     background-color: rgb(41, 41, 196);
+     color: white;
+     border-radius: 15px;
+     border-bottom-left-radius: 0px;
+     padding: 15px 20px;
+     align-self: center;
+     font-weight: 600;
+}
+
+ #footer {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 30px;
+    color: rgb(253, 251, 251);
+}
