@@ -2,58 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piggyvest SignUp Page</title>
-    <link rel="stylesheet" href="./mycss/style.css">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Piggyvest Logo Design</title>
+    <link rel="stylesheet" href="stycecss/style.css">
 </head>
 <body>
-    <div class = "container">
-            <div id="logo">
-                <img src="https://res.cloudinary.com/lizb/image/upload/v1586527083/piggy_logo_eglwa3.svg" alt="piggylogo">
-            </div>
-            <div class="content">
-            <div id = "header">
-                <h1>Create a Secure Account</h1>
-                <p>Welcome to the future of Savings & Investments</p>
-            </div>
-            <form>
-            <div class = "logindetails">
-                <div id = "fname">
-                    <label for="full name">Full Name</label>
-                    <input type="text" placeholder="Full Name">
+    <div id="logo">
+        <img src="https://res.cloudinary.com/dcuozjlxq/image/upload/v1586609338/piggylogo_b3nsdg.png" alt="piggylogo">
+    </div>
+    <div class="container">
+        <div class ="header">
+            <h1>Create a Secure Account</h1>
+            <p>Welcome to the future of Savings & Investments</p>
+        </div>
+        <div class="myform">
+            <form action="">
+                <div id="fullname">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" placeholder="Full Name" required>
                 </div>
-                <div id="email">
+                <div id="Email">
                     <label for="email">Email Address</label>
-                    <input type="text" placeholder="Email Address">
+                    <input type="email" placeholder="Email Address" required>
                 </div>
-                <div id="phone">
-                    <label for="phone number">Phone Number</label>
-                    <input type="text" placeholder="Phone Number">
+                <div id="phonenum">
+                    <label for="phonenum">Phone Number</label>
+                    <input type="phone" placeholder="Phone Number" required>
                 </div>
-                <div id="password">
+                <div id="pass">
                     <label for="password">Password</label>
-                    <input type="text" placeholder="Password">
+                    <input type="password" placeholder="Password" required>
                 </div>
-                <div id="Referrer">
-                    <label for="referrer">Referrer Phone Or Code</label>
-                    <input type="text" placeholder="Referrer Phone Or Code">
+                <div id="referrer">
+                    <label for="referrercode">Referrer Phone or Promo Code(Optional)</label>
+                    <input type="tel" placeholder="Referrer Phone or Code" id="referrercode">
                 </div>
-                <div class = "sel">
-                    <label for="about">How Did You Hear About Us?(Optional)</label>
-                    <select name="about" id="aboutus">How Did You Hear About Us?(Optional)
-                        <option selected = "selected">Click To Select</option>
-                        <option value="Facebook">Facebook</option>
+                <div>
+                    <label for="how-heard-aboutus">How Did You Hear About Us?(Optional)</label>
+                    <select name="aboutus" id="about">
+                        <option value="Click To Select" selected><bold>Click To Select</bold></option>
+                        <option class="facebook">Facebook</option>
+                        <option>Twitter</option>
+                        <option>Instagram</option>
+                        <option>Friend/Family/Referrer</option>
+                        <option>Google Search</option>
+                        <option>Google Playstore</option>
+                        <option>Online Blog</option>
+                        <option>Local Newspaper</option>
+                        <option>At an Event</option>
+                        <option>Other</option>
                     </select>
+                    <div class="button">
+                        <button>CREATE ACCOUNT</button>
+                    </div>
                 </div>
-            <div class="submit">
-                <button type="submit" id="button">CREATE ACCOUNT</button>                    
-            </div>
-        </form>
+            </form>
         </div>
     </div>
-        <div id = "footer">
-                <P>Already have an account? <a href="">Log In</a></P>
-        </div>
+    <div id="footer">
+        <a href="" alt="link to Log In">Already have an account? Log In</a>
     </div>
 </body>
 </html>
