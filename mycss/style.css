@@ -1,135 +1,155 @@
 body {
-    text-align: center;
-    background-color: #ADD8E6;
-    color: black;
-    padding: 0px;
-    margin: 0px;
-}
-
-a {
-    text-decoration: none;
+    background-color: #F986A9;
     color: white;
 }
 
-.container {
-    margin: auto;
-    width: 35%;
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.9em;
+    grid-auto-rows: minmax(100px, auto);
 }
 
-.content {
-    background-color: white;
-    color: #4a5568;
-    width: auto;
-    padding: 20px;
-    background-position: relative;
-    border-radius: 20px;
-    border-bottom-left-radius: 0px;
-    justify-content: center;
-    font-size: 15px;
+.wrapper div{
+    background: #E52165;
+    padding: 10px;
+    border: 2px;
+    box-shadow: black;
+    border-radius: 4px;
 }
 
 #header {
-    color: rgb(6, 6, 105);
-    text-align: center;
-    font-size: 10px;
+    display: flex;
+    font-size: 40px;
+    background-color:  #0D1137;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    text-transform: uppercase;
+    margin-top: 0px;
 }
 
-.content h1 {
-    font-family: U8, sans-serif;
-    color: rgb(14, 14, 153);
-    font-size: 25px;
-    font-weight: 700;
-    letter-spacing: -1px;
+#about {
+    grid-column: 2/4;
+    grid-row: 1;
 }
 
-#header p {
-    color: rgb(48, 46, 46);
+#biodata {
+    grid-column: 1/3;
+}
+
+#contacts {
+    grid-column: 1/4;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+h2 {
+    color: #0D1137;
+    font-size: 30px;
+    align-self: center;
+    justify-self: center;
     margin-top: 10px;
-    padding-top: 1opx;
-    font-size: 14px;
-    line-height: 2px;
-    letter-spacing: 1px;
-    font-weight: 500;
+    margin-bottom: 2px;
 }
 
-#logo {
-    width: auto;
-    text-align: center;
-    padding: 20px;
+.contactform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    min-width: 90vw;
+    flex-direction: column;
+    background-color: #E52165;
+    margin-top: 16px;
+}
+
+form {
+    background-color: #F986A9;
+    padding: 28px;
+    border-radius: 6px;
+    margin: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 408px;
+    border-radius: 8px;
+    border-bottom-left-radius: 0px;
+    font-size: 16px;
+    height: 48px;
+    background-color: #0D1137;
     color: white;
+    border: none;
+}
+
+a:hover button{
+    background-color: #E52165;
+    transition-duration: 1s;
+} 
+
+:hover h1 {
+    background-color: rgb(230, 96, 143);
+    transition-duration: 1s;
+}
+
+input {
+    padding: 3px;
+    margin-bottom: 10px;
+    width: 400px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    height: 43px;
+}
+
+.details div {
+    grid-gap: 5px;
 }
 
 img {
-    max-width: 100%;
-    height: 60px;
+    width: 60%;
+    height: 300px;
+    align-self: center;
+    margin-left: 90px;
+    margin-top: 10px;
 }
 
-.logindetails {
-    padding-left: 20px;
-    padding-right: 20px;
-    align-content: center;
-    font-weight: 400;
-    text-align: start;
-    position: relative;
-}
- .logindetails label {
-     display: block;
-     padding-top: 30px;
-     margin: 0.3rem -0.16rem;
-     text-align: start;
-     font-weight: 530;
- }
-
- .logindetails input[type = "text"]{
-     width: 100%;
-     padding: 8px;
-     height: 30px;
-     border-radius: 5px;
-     background-color: rgb(233, 225, 225);
-     text-decoration: none;
-     color: #edf2f7;
-     font-weight: 500;
-     display: block;
- }
-
- .logindetails input::placeholder{
-    color: grey;
- }
-    
- select {
-     background-color: rgb(201, 193, 193);
-     width: 100%;
-     height: 50px;
-     margin: 0px, 20px, 10px, 20px;
-     border-radius: 5px;
-     color: gray;
-     align-self: center;
- }
-
- option {
-     background-color: white;
-     color: black;
-     height: 40;
-     font-weight: 500;
- }
-
-button{
-     width: 100%;
-     height: 60px;
-     margin-top: 30px;
-     margin-bottom: 40px;
-     background-color: rgb(41, 41, 196);
-     color: white;
-     border-radius: 15px;
-     border-bottom-left-radius: 0px;
-     padding: 15px 20px;
-     align-self: center;
-     font-weight: 600;
+.details {
+    grid-column: 1/2;
 }
 
- #footer {
-    text-align: center;
-    font-size: 15px;
-    margin-top: 30px;
-    color: rgb(253, 251, 251);
+h1 {
+    background-color: #0D1137;
+    font-size: 18px;
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 4px;
+}
+
+#contacts ul li {
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 4px;
+}
+
+ul li{
+    padding: 4px;
+    margin-left: 10px;
+    list-style-type: none;
+} 
+
+p {
+    padding: 4px;
 }
